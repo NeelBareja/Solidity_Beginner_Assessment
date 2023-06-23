@@ -33,7 +33,7 @@ contract MyToken {
         balances[_address] += _value;
     }
     // burn function
-    function burnCoin(address _address, uint _value) public{
+    function burnToken(address _address, uint _value) public{
 
         if (balances[_address] >= _value){
             totalSupply -= _value;
